@@ -1,0 +1,38 @@
+{
+    "name": "x-laravel/payline-qnb-driver",
+    "description": "QNB Finansbank VPOS driver for x-laravel/payline",
+    "keywords": ["laravel", "payment", "qnb", "finansbank", "vpos"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0",
+        "x-laravel/payline": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "XLaravel\\PaylineQnbDriver\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "XLaravel\\PaylineQnbDriver\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "XLaravel\\PaylineQnbDriver\\QnbServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable"
+}
